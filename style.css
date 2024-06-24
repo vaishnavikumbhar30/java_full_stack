@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+  }
+  
+  body{
+    overflow-x: hidden;
+    font-family: "Nunito", sans-serif;
+  }
+
+
+  /* home section start  */
+
+section{
+    padding: 2rem 5%;  
+ }
+ .home{
+     display: flex;
+     align-items: center;
+     min-height: 50vh;
+     background: url(./images/java.jpg) no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ 
+ .home .java{
+   max-width: 50rem;    
+ }
+ .home .java h3{
+   font-size: 3rem;
+   color: #fff;
+ }
+ 
+ .home .java span{
+   font-size: 3rem;
+   color: #FF9900;
+   font-weight: bold;
+   font-family: "Nunito", sans-serif;
+ }
+ .home .java p{
+   font-weight: bold;
+   color: #fff;
+   font-family: "Nunito", sans-serif;
+   font-size: 1.313rem;
+ }
+ /* home section end  */
+
+/* couser section  */
+.container-course{
+    padding:  50px 75px ;
+    /* border: 1px solid; */
+    /* border-radius: 10px; */
+}
+.javacourse{
+    /* border: 1px solid; */
+    border-bottom: 5px  solid ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: #D8EFD3; */
+
+}
+
+.benefits-list {
+    padding: 20px;
+    margin: 20px 0;
+}
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+     
+}
+.benefits-list li:hover {
+    transform: translateX(10px);
+    background-color: #bad7f4;
+}
+.benefits-list i {
+    margin-right: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+.benefits-list li:hover i {
+    color: #5f37e2;
+    transform: scale(1.2);
+}
+/* course section end */
+
+
+
+/* course content  */
+
+.container-accordion{
+    margin: 50px;
+    padding: 40px 80px ;
+    
+}
+
+.accordion-button {
+    background-color: #e7f1ff;
+    color: #0056b3;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    color: #0056b3;
+    background-color: #e7f1ff;
+}
+.accordion-body {
+    background-color: #f8f9fa;
+}
+.show-more-btn {
+    background-color: #0056b3;
+    color: #fff;
+    margin-top: 20px;
+    display: block;
+    /* width: 100%; */
+}
+/* course content */
+
+
+
+
+
+
+
+
+/* FAQ section start */
+/* 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-style: medium;
+} */
+ 
+.wrapper {
+    max-width: 55%;
+    margin: auto;
+    /* margin-left: 80px; */
+  }
+  
+  .wrapper > p,
+  .wrapper > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .wrapper > h1 {
+    letter-spacing: 2px;
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+  }
+  
+  .accordion-wrapper {
+    background-color: white;
+    /* background-color: #78ebc4; */
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    padding: 24px 1.25rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-style: medium;
+    
+  }
+  
+  /* .accordion i {
+    font-size: 1.6rem;
+  } */
+  
+  .active,
+  .accordion-wrapper:hover {
+    background-color: #cdf0e4;
+  }
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+  }
+  .pannel p {
+    color:#666;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
+  .faq {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    /* margin: 10px 0; */
+    
+  }
+  .faq.active {
+    border: none;
+  }
+  
+  .icon{
+    margin-right: 16px;
+  }
+  
+  /* FAQ section end  */
+
+
+   /* requirment section */
+
+   .container-requirment {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 25px 50px 75px;
+  }
+
+  .container-requirment h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .box {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #FFF8DC;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-bottom: 4px solid;
+    border-top: 4px solid;
+  }
+
+  .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .box .requirement {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .box .content {
+    color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .box {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .box {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  }
+/* requirment section */
+
+
+
+/* full stack */
+
+.course-section1 {
+   margin: 10px ;
+   padding: 30px;
+   background-color: whitesmoke;
+   /* border-left: 5px solid red; */
+   /* background-color: #f6eff8; */
+}
+
+.course-section1 h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin: 50px;
+  border-bottom: 2px solid;
+}
+.course-section1 span{
+  background-color: yellow;
+}
+
+.course-grid {
+  display: flex;
+  /* justify-content: center;   */
+  flex-wrap: wrap;
+  
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  margin: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-card:hover {
+  transform: translateY(-20px);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+  
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover .image-container img {
+  transform: scale(1.1);
+}
+
+
+
+.course-card h2 {
+  font-size: 1.5em;
+  margin: 15px 10px 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.course-card p {
+  font-size: 1em;
+  color: #555;
+  margin: 0 10px 20px;
+  text-align: center;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .course-card {
+      max-width: 100%;
+      margin: 10px 0;
+  }
+}
+
+/* full stack */
+
+
+
+  
+/* <!-- Top career options in Java start --> */
+/* .row{
+  padding: 75px 100px;
+} */
+
+.container-java{
+    padding:  50px 75px ;
+    background-color: whitesmoke;
+  
+  }
+  .card-java {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+  
+  }
+  
+  .card-java:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .modal-body {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+
+
+  /* full stack java */
+  
+
+
+
+  /* review */
+  /* review */
